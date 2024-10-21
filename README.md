@@ -45,16 +45,24 @@ $ forge snapshot
 $ anvil
 ```
 
-### Deploy
+### Deploy & Verify
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/Deploy.s.sol:DeployScript --rpc-url <your_rpc_url> --private-key <your_private_key> --broadcast --verify -vvvv
 ```
 
-### Cast
+### Deployed & Verified Contract Addresses
 
 ```shell
-$ cast <subcommand>
+KingToken: 0xaFd59866dd3290293C6d0bA421c1586D7A0b3207
+```
+
+```shell
+KingStakingPool: 0x1232478bC9c2715ec185160490eE1F087FD35814
+```
+
+```shell
+KingCollections: 0x0F210d07867F4887425Fd5811d962c39443aff11
 ```
 
 ### Help
